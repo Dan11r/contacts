@@ -3,5 +3,22 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
+  opacity: .95;
   height: 60px;
+  background-color: #0B418A;
+  color: #fff;
+  -webkit-box-shadow: 4px 5px 6px 0px rgba(43, 54, 62, 0.2);
+  -moz-box-shadow: 4px 5px 6px 0px rgba(43, 54, 62, 0.2);
+  box-shadow: 4px 5px 6px 0px rgba(43, 54, 62, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1{
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  button{
+    margin-right: 20px;
+  }
 }

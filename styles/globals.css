@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100%;
+  background-color: #c1c1c1;
 }
 
 a {
@@ -13,4 +15,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.content{
+  margin: 70px auto;
+  max-width: 600px;
+  width: 100%;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.no-contacts{
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
