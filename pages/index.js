@@ -5,6 +5,8 @@ import ContactItem from "../components/ContactItem";
 
 export default function Home() {
     const [contacts, setContacts] = useState([]);
+    const [visibilityFormChange, setVisibilityFormChange] = useState(false);
+
 
     const getLocalStorageData = () => {
         let data = JSON.parse(localStorage.getItem('contacts'))
@@ -50,13 +52,15 @@ export default function Home() {
             <Header setNewContacts={setNewContacts}/>
             <div className={'content'}>
                 {contacts.length > 0 ? contacts.map((c, i) => <ContactItem removeContact={removeContact}
-                                                     setNewContacts={setNewContacts}
-                                                     key={i + c}
-                                                     name={c.name}
-                                                     changeContact={changeContact}
-                                                     number={c.number}
-                                                     id={c.id}/>)
-                :<div className={'no-contacts'}>Нет контактов</div>}
+                                                                           setNewContacts={setNewContacts}
+                                                                           key={i + c}
+                                                                           setVisibilityFormChange={setVisibilityFormChange}
+                                                                           visibilityFormChange={visibilityFormChange}
+                                                                           name={c.name}
+                                                                           changeContact={changeContact}
+                                                                           number={c.number}
+                                                                           id={c.id}/>)
+                    : <div className={'no-contacts'}>Нет контактов</div>}
             </div>
         </div>
     )

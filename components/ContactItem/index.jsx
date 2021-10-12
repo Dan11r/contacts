@@ -6,9 +6,8 @@ import CreateIcon from '@mui/icons-material/Create';
 import ClearIcon from '@mui/icons-material/Clear';
 import { IconButton } from '@mui/material';
 
-const ContactItem = ({name, number, removeContact, id, changeContact}) => {
-    const [visibilityFormChange, setVisibilityFormChange] = useState(false);
-    const clickChangeBtn = () =>{
+const ContactItem = ({name, number, removeContact, id, changeContact, setVisibilityFormChange, visibilityFormChange}) => {
+    const clickChangeBtn = () => {
         setVisibilityFormChange(true)
     }
     const clickRemoveBtn = () =>{
